@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<TitledPane styleClass="text" text="Team Info" alignment="CENTER" animated="false" collapsible="false" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <HBox styleClass="sub_background" prefHeight="200.0">
+         <children>
+         <VBox prefHeight="450.0" prefWidth="300.0">
+               <GridPane prefWidth="225.0">
+                  <columnConstraints>
+                     <ColumnConstraints prefWidth="50.0" />
+                     <ColumnConstraints prefWidth="50.0" />
+                     <ColumnConstraints prefWidth="50.0" />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints prefHeight="30.0"/>
+                     <RowConstraints prefHeight="30.0"/>
+                     <RowConstraints prefHeight="30.0"/>
+                  </rowConstraints>
+                  <children>
+                     <Text style="-fx-fill: white;" text="Team name" GridPane.rowIndex="1"/>
+                     <Text style="-fx-fill: white;" text="Team leader email  " GridPane.rowIndex="2"/>
+                     <Text style="-fx-fill: white;" text="Team members" GridPane.rowIndex="3"/>
+                     <Text style="-fx-fill: white;" fx:id="name" GridPane.columnIndex="8" GridPane.rowIndex="1"/>
+                     <Text style="-fx-fill: white;" fx:id="contact" GridPane.columnIndex="8" GridPane.rowIndex="2"/>
+                     <Text style="-fx-fill: white;" fx:id="members" GridPane.columnIndex="8" GridPane.rowIndex="3"/>
+                  </children>
+               </GridPane>
+            </VBox>
+            <Region HBox.hgrow="ALWAYS" />
+            <ImageView fx:id="logo" fitWidth="150" fitHeight="150"/>
+         </children>
+      </HBox>
+   </content>
+</TitledPane>
